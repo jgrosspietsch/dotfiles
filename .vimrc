@@ -25,6 +25,7 @@ NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'ahayman/vim-nodejs-complete'
 NeoBundle 'marijnh/tern_for_vim'
 NeoBundle 'wlangstroth/vim-racket'
+NeoBundle 'eagletmt/neco-ghc'
 
 call neobundle#end()
 
@@ -98,8 +99,11 @@ let g:airline_powerline_fonts = 0
 let g:airline_symbols = {}
 
 " vim-nodejs-complete
-
 filetype plugin indent on
 filetype plugin on
+
+" neco-ghc
+let g:haskellmode_completion_ghc = 0
+autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc ts=8 et sts=4 sw=4 sr
 
 NeoBundleCheck
