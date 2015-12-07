@@ -12,6 +12,7 @@ call neobundle#begin(expand('/Users/Joe/.vim/bundle'))
 
 NeoBundleFetch 'Shougo/neobundle.vim'
 
+NeoBundle 'itchyny/landscape.vim'
 NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'NLKNguyen/papercolor-theme'
 NeoBundle 'fatih/vim-go'
@@ -29,9 +30,7 @@ NeoBundle 'eagletmt/neco-ghc'
 
 call neobundle#end()
 
-set t_Co = 256
-set background = light
-colorscheme PaperColor
+colorscheme landscape
 set number
 syntax on
 
